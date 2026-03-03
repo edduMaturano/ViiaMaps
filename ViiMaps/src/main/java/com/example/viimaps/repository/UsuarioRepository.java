@@ -1,7 +1,7 @@
-package com.example.viimaps.repository;
+package com.example.viiamaps.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.viimaps.repository.entity.Usuario;
+import com.example.viiamaps.repository.entity.Usuario;
 import org.springframework.stereotype.Repository;
 
 @Repository
