@@ -1,7 +1,7 @@
-package com.example.viimaps.Service;
+package com.example.viiamaps.Service;
 
-import com.example.viimaps.repository.AvaliacaoRepository;
-import com.example.viimaps.repository.entity.Avaliacao;
+import com.example.viiamaps.repository.AvaliacaoRepository;
+import com.example.viiamaps.repository.entity.Avaliacao;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
