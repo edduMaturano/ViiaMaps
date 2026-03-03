@@ -1,8 +1,7 @@
-package com.example.viimaps.Service;
+package com.example.viiamaps.Service;
 
-import com.example.viimaps.repository.UsuarioRepository;
-import com.example.viimaps.repository.entity.Acessibilidade;
-import com.example.viimaps.repository.entity.Usuario;
+import com.example.viiamaps.repository.UsuarioRepository;
+import com.example.viiamaps.repository.entity.Usuario;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +16,6 @@ public class UsuarioService {
     public List<Usuario> findAll() {return repository.findAll(); }
     public Optional<Usuario> findById(Long id) {return repository.findById(id); }
     public Usuario save(Usuario usuario) { return repository.save(usuario); }
-    public void delete(Usuario usuario) {repository.delete(usuario);
+    public void delete(Long id) {repository.deleteById(id);
     }
 }
