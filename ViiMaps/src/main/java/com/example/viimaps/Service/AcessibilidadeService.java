@@ -1,8 +1,8 @@
-package com.example.viimaps.Service;
+package com.example.viiamaps.Service;
 
 
-import com.example.viimaps.repository.AcessibilidadeRepository;
-import com.example.viimaps.repository.entity.Acessibilidade;
+import com.example.viiamaps.repository.AcessibilidadeRepository;
+import com.example.viiamaps.repository.entity.Acessibilidade;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +16,6 @@ public class AcessibilidadeService {
 
     public List<Acessibilidade> findAll() {return repository.findAll();}
     public Optional<Acessibilidade> findById(Long id) {return repository.findById(id);}
-    public Acessibilidade save(Acessibilidade usuario) {return repository.save(usuario); }
-    public void delete(Acessibilidade usuario) {repository.delete(usuario);}
+    public Acessibilidade save(Acessibilidade acessibilidade) {return repository.save(acessibilidade); }
+    public void delete(Long id) {repository.deleteById(id);}
 }
